@@ -2212,3 +2212,8 @@ th.hide-for-touch {
 ----------------------------------------- */
 strong {
   font-weight: 600; }
+
+#manifesto {
+  padding-top: 6em; }
+  #manifesto h4 {
+    padding-bottom: 1.25rem; }

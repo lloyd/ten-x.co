@@ -67,9 +67,9 @@
 //  "foundation/components/thumbs",
 //  "foundation/components/tooltips",
 //  "foundation/components/top-bar",
-	"foundation/components/type",
+	"foundation/components/type";
 //  "foundation/components/offcanvas",
-	"foundation/components/visibility";
+//	"foundation/components/visibility";
 
 /*! ----------------------------------------
 	 ten|x LESS
@@ -79,12 +79,12 @@
 ----------------------------------------- */
 
 // General styling
+body { 	background-color: #eee; }
 strong { font-weight: 600; }
 
 // Section specific styling
+#home { height: 100vh; }
+
 #manifesto {
-	padding-top: 6em;
-	h4 {
-		padding-bottom: 1.25rem;;
-	}
+  h4 { padding-bottom: 1.25rem; }
 }

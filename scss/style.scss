@@ -1,29 +1,6 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
-// Define our SCSS Mixins
-@mixin imageSize($width, $height) {
-	width: $width;
-	height: $height;
-}
-
-// retina.sass
-// A helper mixin for applying high-resolution background images (http://www.retinajs.com)
-@mixin at2x($path, $ext: "jpg", $w: auto, $h: auto) {
-	$at1x_path: "#{$path}.#{$ext}";
-	$at2x_path: "#{$path}@2x.#{$ext}";
-
-	background-image: url("#{$at1x_path}");
-
-	@media all and (-webkit-min-device-pixel-ratio : 1.5),
-				 all and (-o-min-device-pixel-ratio: 3/2),
-				 all and (min--moz-device-pixel-ratio: 1.5),
-				 all and (min-device-pixel-ratio: 1.5) {
-					 background-image: url("#{$at2x_path}");
-					 background-size: $w $h;
-	}
-}
-
 // Load Google Webfont
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,300italic);
 
@@ -37,7 +14,7 @@
 @import
 //  "foundation/components/accordion",
 //  "foundation/components/alert-boxes",
-//  "foundation/components/block-grid",
+  "foundation/components/block-grid",
 //  "foundation/components/breadcrumbs",
 //  "foundation/components/button-groups",
 //  "foundation/components/buttons",
@@ -77,14 +54,22 @@
 	 http://finette.com
 	 Good artists copy, great artists steal
 ----------------------------------------- */
+// Define our SCSS Mixins
+@mixin imageSize($width, $height) {
+	width: $width;
+	height: $height;
+}
 
 // General styling
-body { 	background-color: #eee; }
 strong { font-weight: 600; }
 
 // Section specific styling
 #home { height: 100vh; }
 
-#manifesto {
-  h4 { padding-bottom: 1.25rem; }
-}
+#manifesto { h4 { padding-bottom: 1.25rem; } }
+
+#chevron { img { @include imageSize(75px, 75px); } }
+
+#main { img { width: 100vw; } }
+
+#about { margin-top: 3em; }

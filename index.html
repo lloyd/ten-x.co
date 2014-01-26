@@ -15,20 +15,72 @@
 		<div class="large-6 large-offset-3 columns">
 			<h4>ten|x is a consulting & interim management firm specializing in open innovation and entrepreneurship.</h4>
 			<p class="text-justify">In the tradition of the great Silicon Valley companies we see ourselves as a garage. We don't hypothesize - we experiment, we get our hands dirty and we build things. We are entrepreneurs to the core. We have unique experiences in building open innovation systems, creating technologies used by hundreds of millions of people and bring Silicon Valley-thinking to companies around the world.</p>
-			<p><em>We aim to make things better - by 10x, not 10%.</em> | <a href="mailto:hello@ten-x.co">Contact &rarr;</a></p>
+			<p><em>We aim to make things better - by 10x, not 10%.</em></p>
+		</div>
+	</div>
+	<div class="row" id="chevron">
+		<div class="large-12 columns text-center">
+			<img src="img/chevron.png" alt="more..." />
 		</div>
 	</div>
 </div>
-		
-<script src="js/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
-<script>
-	$(document).foundation();
 
-	$(window).bind("load resize",function(e){
+<div id="main">
+	<img src="img/header.jpg" alt="Pascal Finette" />	
+</div>
+
+<div class="row" id="about">
+	<div class="large-6 columns">
+		<h3>About</h3>
+		<p>ten|x was founded by <a href="https://www.linkedin.com/in/pfinette">Pascal Finette</a>, a German-born serial entrepreneur with more than 20 years of experience at the intersection of entrepreneurship and technology. We worked with Internet powerhouses Google, eBay and Mozilla as well as innovative startups and governments. Our expertise is anchored in our cross-disciplinary experience, our deep understanding of technology and its impact on society and organizations, our entrepreneurial roots and the understanding that the new technologies we are seeing today are leading to exponential,not linear, growth.</p>
+	</div>
+	<div class="large-6 columns">
+		<h3>Approach</h3>
+		<p>There is no set process we use for every client. Every client is different and deserves a process tailored to their needs. That said, we do have a few overarching ideas that we believe in:</p>
+		<ul><li><strong>Open Innovation.</strong> The participation culture is here. It is thriving, growing, emerging. And like the Internet, it is connecting people and movements in a way we haven't seen before. We have worked on some of the prime examples in the field and drive the practice forward.</li><li><strong>Entrepreneurial Thinking.</strong> The entrepreneurial process is deeply engrained in us. We have built entrepreneurial ecosystems on four continents and are passionate about supporting entrepreneurs who tackle some of the world's biggest problems.</li><li><strong>Technology.</strong> Over the last decade we shifted from linear to exponential advancements in technology. This leads to unprecedented opportunities and significantly accelerated change. We thrive in this environment.</li></ul>
+	</div>
+</div>
+
+<div class="row"><div class="large-12 columns"><hr /></div></div>
+
+<div class="row">
+	<div class="large-12 columns">
+		<h3>Some of our Clients</h3>
+		<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-5">
+		  <li><img src="img/client-nasa.png" alt="NASA" /></li>
+		  <li><img src="img/client-auchan.png" alt="Auchan" /></li>
+		  <li><img src="img/client-hitachi.png" alt="Hitachi" /></li>
+		  <li><img src="img/client-europeancommission.png" alt="European Commission" /></li>
+		  <li><img src="img/client-deutscherbundestag.png" alt="Deutscher Bundestag" /></li>
+		</ul>
+	</div>
+</div>
+
+<div class="row"><div class="large-12 columns"><hr /></div></div>
+
+<div class="row">
+	<div class="large-12 columns">
+		<h3>Get in Touch</h3>
+		<p>We're always looking to work with awesome companies, organizations and individuals. If you have a project in mind, let's talk! We'd love to be partners on your next endeavor: <a href="mailto:hello@ten-x.co">Hire Us &rarr;</a></p>
+	</div>
+</div>
+
+<div class="row"><div class="large-12 columns"><hr /></div></div>
+
+<div class="row">
+	<div class="large-12 columns text-center">
+		<p class="subheader">ten|x is based in Silicon Valley (CA), USA. Get in touch: <a href="mailto:hello@ten-x.co">&#9733; hello@ten-x.co</a> | <a href="tel:+16505268348">&#9742; +1 (650) 526-8348</a></p>
+	</div>
+</div>
+
+		
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+	$(window).bind("load resize",function(){
 		var parentHeight = $('#home').height();
 		var childHeight = $('#manifesto').height();
 		$('#manifesto').css('padding-top', (parentHeight - childHeight) / 2);
+		$('#chevron').css('margin-top', ((parentHeight - childHeight) / 2) - 75);
 	});
 </script>
 

@@ -11,6 +11,11 @@
 <body>
 
 <div id="home">
+	<div class="row" id="logo">
+		<div class="large-12 columns text-center">
+			<img src="img/logo.png" alt="ten|x logo" />
+		</div>
+	</div>
 	<div class="row" id="manifesto">
 		<div class="large-6 large-offset-3 columns">
 			<h4>ten|x is a consulting & interim management firm specializing in open innovation and entrepreneurship.</h4>
@@ -83,7 +88,7 @@
 	$(window).bind("load resize",function(){
 		var parentHeight = $('#home').height();
 		var childHeight = $('#manifesto').height();
-		$('#manifesto').css('padding-top', (parentHeight - childHeight) / 2);
+		$('#manifesto').css('margin-top', (parentHeight - childHeight) / 2 - 110);
 		$('#chevron').css('margin-top', ((parentHeight - childHeight) / 2) - 75);
 	});
 </script>
